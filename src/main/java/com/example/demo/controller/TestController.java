@@ -12,8 +12,24 @@ import java.util.Optional;
 @RequestMapping("/api/test")
 public class TestController {
 
-    @Autowired
+
+    // field injection
+//    @Autowired
+//    private EntityService entityService;
+
     private EntityService entityService;
+
+    // setter injection
+    @Autowired
+    public void setEntityService(EntityService entityService) {
+        this.entityService = entityService;
+    }
+
+//    //constructor injection
+//    @Autowired
+//    public TestController(EntityService entityService) {
+//        this.entityService = entityService;
+//    }
 
     @GetMapping("/entity")
     public EntityDTO getEntity() {

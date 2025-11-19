@@ -29,8 +29,45 @@ public class Test {
 
             System.out.println("Reverse words :- "+ result);
 
+            for (int i=0; i< 5; i++) {
+                System.out.println("Hello World");
+            }
+
 
 
     }
 
 }
+
+//
+//public class Calculate {
+//
+//    public float doSomeCalculation(int parm1, int parm2, int parm3, int parm4) {
+//
+//        float answer = 0.0f;
+//
+//        //...
+//
+//        //...
+//
+//        //...
+//
+//        handle this exception
+//
+//        if( parm1 == 0){
+//            throw new IllegalArgumentException("Division by zero not allowed");
+//        }
+//
+//        float f = parm3/parm1;
+//
+//        //...
+//
+//        //...
+//
+//        return answer;
+//
+//    }
+//
+//}
+
+
